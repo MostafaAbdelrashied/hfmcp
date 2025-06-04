@@ -1,5 +1,5 @@
 [project]
-name = "mcp"
+name = "hfmcp"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -11,6 +11,7 @@ dependencies = [
     "datasets>=3.6.0",
     "evaluate>=0.4.3",
     "loguru>=0.7.3",
+    "mcp>=1.9.2",
     "polars>=1.30.0",
     "scikit-learn>=1.6.1",
     "scipy>=1.15.3",
@@ -22,7 +23,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mcp = "mcp:main"
+hfmcp = "hfmcp:main"
 
 [build-system]
 requires = ["hatchling"]
