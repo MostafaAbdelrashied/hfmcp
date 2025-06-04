@@ -1,0 +1,36 @@
+[project]
+name = "mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mostafa Abdelrashied", email = "mostafa.abdelrashied@outlook.de" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=3.6.0",
+    "loguru>=0.7.3",
+    "polars>=1.30.0",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.15.3",
+    "seaborn>=0.13.2",
+    "torch>=2.7.0",
+    "torchaudio>=2.7.0",
+    "torchvision>=0.22.0",
+    "transformers[sentencepiece,speed,torch,vision]>=4.51.3",
+]
+
+[project.scripts]
+mcp = "mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.0",
+    "ruff>=0.11.12",
+]
